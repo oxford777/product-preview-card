@@ -90,7 +90,7 @@ footer a {
 .promo{
     color: hsl(158, 36%, 37%);
     font-family: "Fraunces", sans-serif;;
-    font-weight: bolds;
+    font-weight: bold;
     font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
