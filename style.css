@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body{
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+}  
+
+h1{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", sans-serif;
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    line-height: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 1rem;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.layout{
+    color: hsl(228, 12%, 48%);
+    display: flex;/* en le mettant en flex, cela a permis à .carte de se mettre à coté de la photo*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    flex: 1;
+}
+
+.carte{
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.photo {
+    flex: 1;
+    width: 50%;
+}
+
+.texte{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.parfum{
+    display: flex;
+    align-items: flex-start;
+    font-size: clamp(0.6rem, 2vw, 0.7rem);
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.description{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.prix{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.promo{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;;
+    font-weight: bolds;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.ancien-prix{
+    text-decoration: line-through;  
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* aligne verticalement icône et texte */
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem; 
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.btn:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px){
+
+  .layout {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .carte {
+    flex-direction: column;
+    width: 375px; /* correspond au design mobile */
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .photo, .texte {
+    width: 100%;
+  }
+
+  .photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ou 4 / 3 pour moins carré */
+    object-fit: cover;
+    border-radius: 0.75rem 0.75rem 0 0;
+    display: block;
+  }
+
+  .texte {
+    padding: 1.5rem;
+    margin: 0 auto; /* Centre le bloc dans la carte */
+  }
+
+  .btn {
+    width: 100%;
+  }
+ 
+}
+
+@media screen and (min-width: 576px) and (max-width: 750px){
+.layout {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+.carte {
+    flex-direction: column;
+    width: 375px; /* correspond au design mobile */
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .photo, .texte {
+      width: 100%;
+    }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.75rem 0.75rem 0 0;
+    
+  }
+
+  .texte {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+ 
+@media screen and (min-width: 750px) and (max-width: 970px){
+.carte {
+    flex-direction: column;
+    width: 100%; 
+  }
+
+  .texte {
+    width: 100%;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 240px;           /* Hauteur fixe similaire au modèle */
+    object-fit: cover;       /* Rognage maîtrisé, esthétique */
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+
+  .texte {
+    padding: 2.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+
+  .carte {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: auto;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  
+  .texte {
+    width: 50%;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .texte {
+    padding: 2rem;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
+}
