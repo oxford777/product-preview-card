@@ -212,8 +212,8 @@ footer a {
 
   .photo img {
     width: 100%;
-    height: 240px;           /* Hauteur fixe similaire au modèle */
-    object-fit: cover;       /* Rognage maîtrisé, esthétique */
+    height: 240px; /* Hauteur fixe */
+    object-fit: cover; /* Rognage maîtrisé */
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
   }

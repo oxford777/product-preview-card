@@ -26,8 +26,8 @@ Voici un aperçu du résultat final :
 
 🔗 Liens utiles
 
-- 💻 Code source : [Voir sur GitHub](https://github.com/ton-utilisateur/product-preview-card)
-- 🌐 Site en ligne : [Voir le site](https://ton-utilisateur.github.io/product-preview-card/)
+- 💻 Code source : [Voir sur GitHub](https://github.com/oxford777/product-preview-card)
+- 🌐 Site en ligne : [Voir le site](https://oxford777.github.io/product-preview-card/)
 
 
 
@@ -67,8 +67,8 @@ Voici un aperçu du résultat final :
 
 Je m'appelle Frédérique et je continue à me former en développement web.
 
-- GitHub : [@ton-utilisateur](https://github.com/ton-utilisateur)
-- Frontend Mentor : [@ton-utilisateur](https://www.frontendmentor.io/profile/ton-utilisateur)
+- GitHub : [@oxford777](https://github.com/oxford777)
+- Frontend Mentor : [@oxford777](https://www.frontendmentor.io/profile/oxford777)
 
 
 
